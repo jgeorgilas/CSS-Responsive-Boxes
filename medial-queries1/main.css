@@ -1,6 +1,41 @@
 body {
-  background: blanchedalmond;
+  background: rgb(203, 203, 203);
   margin: 0;
 }
 
-/* testing-2 */
+.container{
+  display: flex;
+  flex-direction: column;
+}
+
+.a, .b, .c{
+  border: black solid 2px;
+  background-color: rgb(190, 190, 190);
+  font-weight: bolder;
+  font-size: xx-large;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+
+.a{
+  min-height: 100px;
+  flex: 100%;
+}
+
+.b{
+  min-height: 200px;
+  flex: 70%;
+}
+
+.c{
+  min-height: 100px;
+  flex: 30%;
+}
+
+@media (min-width: 800px) {
+  .bc{
+    display: flex;
+  }
+}
