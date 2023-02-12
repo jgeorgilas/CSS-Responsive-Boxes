@@ -1,3 +1,43 @@
 body {
   background: peachpuff;
 }
+.a, .b, .c, .d, .e, .f, .g, .h{
+  border: black solid 1px;
+  background-color: rgb(190, 190, 190);
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  font-size: medium;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1px;
+}
+ .bcdefgh{
+  display: flex;
+  flex-direction:column;
+}
+ .h{
+  display: flex;
+}
+ .bcdefg{
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+}
+ .b, .c, .d, .e, .f, .g{
+  width: 32%;
+}
+ @media (min-width: 500px) {
+  .h{
+   display: flex;
+   height: 304px;
+   width: 100%;
+   }
+ .bcdefgh {
+  display: flex;
+  flex-direction: row;
+  width: 100%; 
+   }
+  }
