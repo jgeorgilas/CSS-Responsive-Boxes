@@ -2,21 +2,69 @@ body {
   background: rgb(203, 203, 203);
   margin: 0;
 }
-
-@media (max-width: 800px) {
-  .container {
-    flex-direction: column;
-  }
+.container{
+  display: flex;
+  flex-direction: column;
 }
-
-.a, .b, .c, .d, .e, .f{
+.a {
+  display: flex;
+}
+.bcdef {
+  display: flex;
+  flex-direction: row;
+}
+.bcde {
+  Display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.cde{
+  display: flex;
+  flex-direction: row;
+}
+.c {
+  width: 33%;
+}
+.d{
+  width: 33%;
+}
+.e{
+  width: 33%;
+}
+.f{
+  flex-direction: column;
+  width: 30%;
+}
+.a, .b, .c, .d, .e{
   border: black solid 2px;
   background-color: rgb(190, 190, 190);
   font-weight: bolder;
   font-size: xx-large;
-  min-height: 200px;
+  height: 150px;
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 20px;
+}
+.f{
+  border: black solid 2px;
+  background-color: rgb(190, 190, 190);
+  font-weight: bolder;
+  font-size: xx-large;
+  height: 343px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+@media (max-width: 500px) {
+ .f{
+  display: flex;
+  height: 100px;
+  width: auto;
+  }
+  .bcdef {
+    display: flex;
+    flex-direction: column;
+  }
 }
